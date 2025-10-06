@@ -1,11 +1,12 @@
 # krmu_portfolio_project
 krmu webdev portfolio project
 KRMU Webdev "Personal Portfolio" Project
-
+Submitted by - Shourya Pratap Singh
+Roll No. - 30
+Section - A
 **The Structure of this Project is as follows:**
 1. Header Section 
     * This Section contains the **Introductory content** of the Project. It consists of **Main Heading** (<h1>) and **Navigation Links** (<nav>).
-
 2. Main Section
     * This Section contains the **Main Content** of the Project. It consists of **Hero & About Section**, **Projects Section** and **Skills Section**.
 
