@@ -1,22 +1,33 @@
-# krmu_portfolio_project
-krmu webdev portfolio project  
-KRMU Webdev "Personal Portfolio" Project  
+# KRMU Web Dev: Personal Portfolio Project
+
 Submitted by - Shourya Pratap Singh  
 Roll No. - 30  
-Section - A  
+Section - A
 
-**The Structure of this Project is as follows:**  
-1. Header Section
-    * This Section contains the **Introductory content** of the Project. It consists of **Main Heading** (`<h1>`) and **Navigation Links** (`<nav>`).
-2. Main Section
-    * This Section contains the **Main Content** of the Project. It consists of **Hero & About Section**, **Projects Section** and **Skills Section**.
-3. Footer Section
-    * This Section contains a **form** with **Name**, **Email**, and **Message** fields, including **labels**, **placeholders**, and **required** attributes.
+This project is a fully styled personal portfolio website built for the Web Development lab assignment. It started as a basic HTML structure (Lab 1) and was then fully styled and enhanced using an external CSS stylesheet (Lab 2).
 
-**The Purpose of this Project is to:**
-1. Learn how to use **HTML tags** to make a well-structured webpage.
-2. Create **links** inside the page to move smoothly between **sections.**
-3. Add **images** with proper descriptions (alt text) for better accessibility.
-4. Show information using **lists** and **tables** in a clear way.
-5. Make a **contact form** with **labels**, **required fields**, and **placeholder text**.
-6. Write clean and organized **HTML code** that is easy to **style** later with ***CSS***
+## Project Features
+
+This portfolio demonstrates the following HTML and CSS concepts:
+
+### 1. HTML Structure
+* **Semantic HTML:** Uses semantic tags like `<header>`, `<main>`, `<section>`, `<nav>`, `<article>`, and `<footer>` to create a well-structured and accessible webpage.
+* **Navigation:** A sticky navigation bar provides smooth-scrolling links to all major sections of the page.
+* **Content Sections:**
+    * **About:** Includes a styled profile image and a brief introduction.
+    * **Skills:** Displays technical skills in a clearly styled `<table>` with alternating row colors.
+    * **Projects:** Uses a responsive **CSS Grid** to display projects as modern "cards," a significant improvement over a simple table.
+* **Contact Form:** A styled contact form built with `<table>` and includes `<label>`, `placeholder` text, and `required` validation attributes.
+
+### 2. CSS Styling & Layout
+* **External Stylesheet:** All styling is managed in a single, well-commented `style.css` file.
+* **Modern Design:**
+    * **Color Theme:** Uses a consistent, professional color scheme defined in `:root` (CSS variables).
+    * **Typography:** Imports and applies the 'Poppins' Google Font for clean, modern text.
+    * **Box Model:** Leverages `padding`, `margin`, `border-radius`, and `box-shadow` to create a clean, spaced-out, card-based layout.
+* **CSS Positioning:**
+    * `position: sticky` is used to create a "sticky" header that stays at the top of the page on scroll.
+    * `position: fixed` is used to create a "Back to Top" button in the bottom-right corner.
+* **Visual Elements:**
+    * Styled `<hr class="section-divider">` elements are used to create full-width visual breaks between sections.
+    * All links, buttons, and project cards feature interactive `:hover` effects.
