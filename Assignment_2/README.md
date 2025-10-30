@@ -1,7 +1,7 @@
 # KRMU Web Dev: Personal Portfolio Project
-
 Submitted by - Shourya Pratap Singh  
 Roll No. - 30  
+Course - B. Tech CSE  
 Section - A
 
 This project is a fully styled personal portfolio website built for the Web Development lab assignment. It started as a basic HTML structure (Lab 1) and was then fully styled and enhanced using an external CSS stylesheet (Lab 2).

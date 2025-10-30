@@ -5,10 +5,10 @@ Lab 2 CSS Styling for Portfolio Project
 /* --- 1. Google Font Import & Color Theme --- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-:root {
+html {
     --primary-color: #450074;
     --secondary-color: #f4f4f4;
-    --accent-color: #450074;
+    --accent-color: #9029b9;
     --text-color: #333;
     --white-color: #ffffff;
 }
@@ -33,13 +33,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-#main-content {
-    margin-top: 150px;
-    /* This overrides the 40px and keeps space below your header */
-    text-align: center;
-    /* This was already correct */
-}
-
 /* --- 3. Header & Navigation Styling --- */
 header {
     background: var(--primary-color);
@@ -48,7 +41,6 @@ header {
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 100;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -61,11 +53,11 @@ header h1 {
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 nav ul li {
+    display: inline-block;
     margin: 0 15px;
 }
 
@@ -82,13 +74,6 @@ nav ul li a:hover {
 }
 
 /* --- 4. Main Content & Section Styling --- */
-main {
-    max-width: 960px;
-    /* This margin is for the 2nd, 3rd, etc. main blocks */
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
 
 /* Welcome text styling */
 main>h2,
@@ -98,6 +83,8 @@ main>p {
 }
 
 section {
+    max-width: 960px;
+    margin: 40px auto 80px auto;
     background: var(--white-color);
     padding: 40px 60px;
     margin-bottom: 80px;
@@ -114,36 +101,27 @@ section h2 {
 /* Section Divider Styling */
 .section-divider {
     border: 0;
-    /* Remove the default border */
     height: 2px;
-    /* Set a height */
     background-color: var(--primary-color);
-    /* Use your theme color */
     opacity: 0.3;
-    /* Soften it */
     margin: 40px 0;
-    /* Add space above/below, but 0 on left/right */
 }
 
 /* --- 5. Specific Section Styling (About, Skills) --- */
 
 /* About Me Section */
-
 #about {
-    margin-top: 1px;
+    margin-top: 150px;
 }
 
 #about img {
     display: block;
     margin: 0 auto 15px;
     border-radius: 50%;
-    /* Rounded profile picture */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: 5px solid var(--accent-color);
     width: 200px;
-    /* Fixed size */
     height: 200px;
-    object-fit: cover;
 }
 
 #about p {
@@ -153,7 +131,6 @@ section h2 {
 
 /* Projects Section Alignment*/
 #projects ul {
-    list-style-position: outside;
     padding-left: 25px;
     margin: 15px 0;
 }
@@ -165,33 +142,24 @@ section h2 {
 }
 
 /* --- Projects Section Styling --- */
-.project-grid {
-    display: grid;
-    /* creates a responsive grid. */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    /* This is the space between the cards */
+.project-container {
+    text-align: center;
     margin-top: 20px;
-    text-align: left;
-    /* Overrides the 'text-align: center' from #main-content */
 }
 
 .project-card {
+    display: block;
+    width: 800px;
+    margin: 15px auto;
+    text-align: left;
     background: var(--secondary-color);
-    /* Use your light grey bg */
     border-radius: 8px;
-    /* Match your other rounded corners */
     padding: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Match your section shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    /* Lifts the card up slightly */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    /* A stronger shadow on hover */
 }
 
 .project-card h3 {
@@ -205,15 +173,14 @@ section h2 {
 }
 
 /* Skills Table Styling */
+
 /* --- Skills Table Styling with Column Borders --- */
 .skills-table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
     border: 2px solid var(--accent-color);
-    /* Outer border */
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -222,7 +189,6 @@ section h2 {
     padding: 12px;
     text-align: center;
     border-right: 2px solid var(--accent-color);
-    /* Column dividers */
 }
 
 /* Remove the last column divider */
@@ -243,26 +209,18 @@ section h2 {
 
 /* --- 6. Contact Form & Button Styling --- */
 #contact {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    /* Center the form section */
+max-width: 600px;
 }
 
 /* --- Contact Table Styling with Border --- */
 .contact-table {
     width: 100%;
-    border-collapse: collapse;
+    
     background-color: var(--white-color);
     margin: 0 auto;
     border: 2px solid var(--accent-color);
-    /* main border around table */
     border-radius: 8px;
-    /* smooth corners */
-    overflow: hidden;
-    /* ensures border radius works properly */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* subtle shadow for depth */
 }
 
 .contact-table td {
@@ -270,13 +228,11 @@ section h2 {
     vertical-align: top;
     font-size: 1rem;
     border-bottom: 1px solid #ddd;
-    /* light row dividers */
 }
 
 .contact-table label {
     font-weight: 600;
     display: inline-block;
-    min-width: 80px;
 }
 
 .contact-table input[type="text"],
@@ -299,7 +255,7 @@ section h2 {
 /* Button Styling */
 button[type="submit"] {
     display: inline-block;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--white-color);
     padding: 12px 20px;
     border: none;
@@ -307,31 +263,27 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #9c03c2;
-    /* lighter color for hover */
+    background-color: #9029b9;
 }
 
 /* --- 7. Footer & Back-to-Top Button --- */
 .site-footer {
     text-align: center;
     padding: 40px 20px 80px 20px;
-    /* Extra padding at bottom to avoid overlap with button */
 }
 
 .back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--white-color);
-    padding: 30px 60px;
+    padding: 20px 30px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
 .back-to-top:hover {
