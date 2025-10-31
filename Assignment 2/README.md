@@ -31,3 +31,14 @@ This portfolio demonstrates the following HTML and CSS concepts:
 * **Visual Elements:**
     * Styled `<hr class="section-divider">` elements are used to create full-width visual breaks between sections.
     * All links, buttons, and project cards feature interactive `:hover` effects.
+
+## Project Purpose
+
+The purpose of this project is to:
+
+1. Apply an **external CSS stylesheet** to structure and manage webpage design effectively.
+2. Use **element, class, and ID selectors** to style different sections of a webpage in a systematic way.
+3. Implement a consistent color theme and custom typography.
+4. Utilize the **CSS Box model** to create proper spacing, borders, and layout adjustments.
+5. Design and style **navigation bars, tables, buttons and separators** for a professional webpage appearance.
+6. Apply **CSS positioning techniques** to create interactive elements such as sticky headers or back-to-top buttons.
