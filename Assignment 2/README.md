@@ -1,7 +1,7 @@
 # KRMU Web Dev: Personal Portfolio Project
+
 Submitted by - Shourya Pratap Singh  
 Roll No. - 30  
-Course - B. Tech CSE  
 Section - A
 
 This project is a fully styled personal portfolio website built for the Web Development lab assignment. It started as a basic HTML structure (Lab 1) and was then fully styled and enhanced using an external CSS stylesheet (Lab 2).
@@ -16,7 +16,7 @@ This portfolio demonstrates the following HTML and CSS concepts:
 * **Content Sections:**
     * **About:** Includes a styled profile image and a brief introduction.
     * **Skills:** Displays technical skills in a clearly styled `<table>` with alternating row colors.
-    * **Projects:** Uses a responsive **CSS Grid** to display projects as modern "cards," a significant improvement over a simple table.
+    * **Projects:** Displays projects as modern "cards," a significant improvement over a simple table.
 * **Contact Form:** A styled contact form built with `<table>` and includes `<label>`, `placeholder` text, and `required` validation attributes.
 
 ### 2. CSS Styling & Layout
